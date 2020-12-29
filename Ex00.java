@@ -7,7 +7,12 @@ class Ex00 {
        System.out.println(i);
     }
   }
+<<<<<<< Updated upstream
   //けんでーす
 	//かいですううううううううう
   //ああああああ
+=======
+  
+  //ああああああいいいいい
+>>>>>>> Stashed changes
 }
