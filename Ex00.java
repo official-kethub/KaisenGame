@@ -7,6 +7,6 @@ class Ex00 {
        System.out.println(i);
     }
   }
-  
+  //けんでーす
   //ああああああ
 }
