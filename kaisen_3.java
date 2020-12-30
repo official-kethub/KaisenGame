@@ -7,7 +7,7 @@ class kaisen_3 {
     int c1, c2, c3, c4;
     Scanner sc = new Scanner(System.in);
     c1 = c2 = c3 = c4 = 0;
-
+    
     do {
       System.out.println("Please type in 'i'");
       i = sc.nextInt();
@@ -33,6 +33,10 @@ class kaisen_3 {
         k = 4;
         c2 = c3 = c1 = 0;
         c4++;
+        System.out.println("c1: " + c1 + " c2: " + c2 + " c3: " + c3 + " c4: " + c4);
+      }
+      if (i == 5) {
+        c1 = c2 = c3 = c4 = 0;
         System.out.println("c1: " + c1 + " c2: " + c2 + " c3: " + c3 + " c4: " + c4);
       }
       i = 0;
