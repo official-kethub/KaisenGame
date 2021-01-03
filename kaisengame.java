@@ -19,9 +19,40 @@ class kaisengame{
         System.out.println("その戦艦はすでに破壊されています");
       }
   //  }while(hp[0]!=0 || hp[1]!=0 || hp[2]!=0 || hp[3]!=0);
+  //int c[a];
+  c[0] = c[1] = c[2] = c[3] = c[4] = 0;
+
+//  do {
+  //  System.out.println("Please type in 'i'");
+  //  i = sc.nextInt();
+    if (i == 1) {
+      k = 1;
+      c[2] = c[3] = c[4] = 0;
+      c[1]++;
+      //System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
+    }
+    if (i == 2) {
+      k = 2;
+      c[1] = c[3] = c[4] = 0;
+      c[2]++;
+      //System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
+    }
+    if (i == 3) {
+      k = 3;
+      c[1] = c[2] = c[4] = 0;
+      c[3]++;
+      //System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
+    }
+    if (i == 4) {
+      k = 4;
+      c[1] = c[2] = c[3] = 0;
+      c[4]++;
+      //System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
+    }
 
   //  int c[a];
     if (i == 5) {
+      c[1] = c[2] = c[3] = c[4] = 0;
         //choose attack
         k = phase1();
         l = phase2();
@@ -39,46 +70,15 @@ class kaisengame{
                     System.out.println("attack same point again");
                 }
             }
-            case 2 || 3:
+            case 2:
+            System.out.println("try again");
+            case 3:
             System.out.println("try again");
         }
 
     }
 
-    //int c[a];
-    c[0] = c[1] = c[2] = c[3] = c[4] = 0;
 
-  //  do {
-      System.out.println("Please type in 'i'");
-      i = sc.nextInt();
-      if (i == 1) {
-        k = 1;
-        c[2] = c[3] = c[4] = 0;
-        c[1]++;
-        System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
-      }
-      if (i == 2) {
-        k = 2;
-        c[1] = c[3] = c[4] = 0;
-        c[2]++;
-        System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
-      }
-      if (i == 3) {
-        k = 3;
-        c[1] = c[2] = c[4] = 0;
-        c[3]++;
-        System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
-      }
-      if (i == 4) {
-        k = 4;
-        c[1] = c[2] = c[3] = 0;
-        c[4]++;
-        System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
-      }
-      if (i == 5) {
-        c[1] = c[2] = c[3] = c[4] = 0;
-        System.out.println("c1: " + c[1] + " c2: " + c[2] + " c3: " + c[3] + " c4: " + c[4]);
-      }
       i = 0;
     } while (true);
   }
